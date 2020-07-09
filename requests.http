@@ -1,0 +1,28 @@
+#### List TODOs ############################
+GET http://localhost:3000/todos HTTP/1.1
+
+### Get TODO Item
+@getKey=310f5fff-c218-11ea-a49d-5413798abf7a
+GET http://localhost:3000/todos/{{getKey}} HTTP/1.1
+
+### Create TODO Item #######################
+POST http://localhost:3000/todos HTTP/1.1
+content-type: application/json
+
+{
+    "text": "sample"
+}
+
+### Update TODO Item ########################
+@putKey=310f5fff-c218-11ea-a49d-5413798abf7a
+PUT http://localhost:3000/todos/{{putKey}} HTTP/1.1
+content-type: application/json
+
+{
+    "checked": true
+}
+
+### Delete TODO Item ########################
+@deleteKey=73874252-c216-11ea-9280-5413798abf7a
+DELETE  http://localhost:3000/todos/{{deleteKey}} HTTP/1.1
+content-type: application/json

@@ -1,0 +1,21 @@
+{
+  "name": "serverless-rest-api",
+  "version": "1.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-python-requirements": "^2.4.1"
+  },
+  "devDependencies": {
+    "serverless": "^1.72.0",
+    "serverless-offline": "^6.3.0",
+    "serverless-offline-python": "^3.22.2"
+  },
+  "scripts": {
+    "db-install": "serverless dynamodb install",
+    "db-start": "serverless  dynamodb start --migrate",
+    "offline": "serverless offline --noPrependStageInUrl"
+  }
+}
