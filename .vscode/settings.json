@@ -8,5 +8,6 @@
     "**/__pycache__": true,
     "env": true,
     ".dynamodb": true
-  }
+  },
+  "python.pythonPath": "env\\Scripts\\python.exe"
 }

@@ -25,5 +25,5 @@ class TodoModel(Model):
         super(TodoModel, self).save()
 
     def __iter__(self):
-        for name, attr in self._get_attributes().items():
+        for name, attr in self.get_attributes().items():
             yield name, attr.serialize(getattr(self, name))

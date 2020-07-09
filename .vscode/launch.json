@@ -17,12 +17,9 @@
         "--port=3000",
         "--noPrependStageInUrl"
       ],
-      "sourceMaps": true,
       "runtimeArgs": ["--lazy"],
-      "outFiles": ["${workspaceFolder}/.webpack/**/*.js"],
       "protocol": "inspector",
-      "cwd": "${workspaceRoot}",
-      "runtimeExecutable": "node",
+      "cwd": "${workspaceFolder}",
       "env": {
         // Here we set some environment vars that should be set locally.
         // They can and will overwrite the ones coming from your serverless.yml
