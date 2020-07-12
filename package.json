@@ -14,8 +14,10 @@
     "serverless-offline-python": "^3.22.2"
   },
   "scripts": {
+    "set-debug" : "set DEBUG=TRUE",
     "db-install": "serverless dynamodb install",
     "db-start": "serverless  dynamodb start --migrate",
-    "offline": "serverless offline --noPrependStageInUrl"
+    "offline": "serverless offline --noPrependStageInUrl",
+    "debug-offline": "npm run set-debug && npm run offline"
   }
 }

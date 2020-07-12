@@ -5,6 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python: Remote Attach",
+      "type": "python",
+      "request": "attach",
+      "port": 5678,
+      "host": "localhost",
+      "pathMappings": [{ "localRoot": "${workspaceFolder}", "remoteRoot": "." }]
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Launch",
@@ -20,6 +28,7 @@
       "runtimeArgs": ["--lazy"],
       "protocol": "inspector",
       "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "node",
       "env": {
         // Here we set some environment vars that should be set locally.
         // They can and will overwrite the ones coming from your serverless.yml
@@ -27,6 +36,6 @@
       "windows": {
         "program": "${workspaceRoot}\\node_modules\\serverless\\bin\\serverless"
       }
-    },
+    }
   ]
 }

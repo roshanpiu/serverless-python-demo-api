@@ -14,7 +14,7 @@ content-type: application/json
 }
 
 ### Update TODO Item ########################
-@putKey=310f5fff-c218-11ea-a49d-5413798abf7a
+@putKey=8210c2bf-c46a-11ea-a934-5413798abf7a
 PUT http://localhost:3000/todos/{{putKey}} HTTP/1.1
 content-type: application/json
 
@@ -23,6 +23,6 @@ content-type: application/json
 }
 
 ### Delete TODO Item ########################
-@deleteKey=73874252-c216-11ea-9280-5413798abf7a
+@deleteKey=3b692416-c46a-11ea-a195-5413798abf7a
 DELETE  http://localhost:3000/todos/{{deleteKey}} HTTP/1.1
 content-type: application/json
